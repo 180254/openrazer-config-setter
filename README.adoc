@@ -1,0 +1,9 @@
+= openrazer-config-setter-182054
+:hardbreaks-option:
+
+.summary
+This script configures Razer mice driven by openrazer.
+It restores the expected mouse settings.
+
+.inspired by
+* https://github.com/openrazer/openrazer/issues/2048
