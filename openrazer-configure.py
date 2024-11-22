@@ -14,7 +14,7 @@ import openrazer.client.devices.mice
 # The configuration I like to use.
 class Config:
     # At least Razer DeathAdder V2 Pro (Wireless) capabilities are covered. (:
-    # https://github.com/openrazer/openrazer/blob/v3.6.1/daemon/openrazer_daemon/hardware/mouse.py#L1351
+    # https://github.com/openrazer/openrazer/blob/v3.9.0/daemon/openrazer_daemon/hardware/mouse.py#L1238
     class Mouse:
         dpi = 1200
         poll_rate = 1000
@@ -176,7 +176,7 @@ class Mouse:
         if not self.device.has("lighting_logo"):
             return
 
-        # https://github.com/openrazer/openrazer/blob/v3.6.1/examples/basic_effect.py#L13
+        # https://github.com/openrazer/openrazer/blob/v3.9.0/examples/basic_effect.py#L13
         self.device.sync_effects = False
 
         if (
