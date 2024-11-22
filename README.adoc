@@ -1,9 +1,20 @@
 = openrazer-config-setter-182054
-:hardbreaks-option:
+:hardbreaks:
 
-.summary
+== summary
 This script configures Razer mice driven by openrazer.
 It restores the expected mouse settings.
 
-.inspired by
-* https://github.com/openrazer/openrazer/issues/2048
+== usage
+`python3 openrazer-configure.py --help` - help: show this help message and exit
+`python3 openrazer-configure.py --dry` - dry run: list devices only, will not reconfigure devices
+`python3 openrazer-configure.py` - run: check the configuration and change if necessary
+
+== configuration
+Modify the `Config` class in the `openrazer-configure.py` file.
+
+== dependencies
+* https://github.com/openrazer/openrazer
+
+== notes
+* inspired by: https://github.com/openrazer/openrazer/issues/2048
